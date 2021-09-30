@@ -24,6 +24,7 @@ R/ Características de interés pueden ser zonas urbanas, cuerpos de agua (opcio
 
 ### 4. Compartir en este documento el link con el código que realizó.
 (no sé si hay que compartir el código directamente o el link, porque no sé si con el link la profe tenga acceso)
+
 //Cargar imagen de landsat8
 var image = ee.Image((landsat8collection)
 //Filtrar para obtener imágenes de la región de interés
