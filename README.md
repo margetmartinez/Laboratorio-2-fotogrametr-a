@@ -16,7 +16,7 @@ R/
 
 ### 2. ¿Qué fecha tiene la imagen que corresponde a la que menor nubosidad?
 
-R/
+R/ 01/04 de abril del 2018
 
 ### 3. ¿Qué combinaciones espectrales de bandas y colores considera útil para comprender las características del paisaje de su interés?
 
