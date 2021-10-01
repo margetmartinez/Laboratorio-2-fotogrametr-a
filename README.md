@@ -20,7 +20,7 @@ R/ 01-04 de abril del 2018
 
 ### 3. ¿Qué combinaciones espectrales de bandas y colores considera útil para comprender las características del paisaje de su interés?
 
-R/ Características de interés pueden ser uso del suelo (deforestación), cuerpos de agua (opciones)
+R/ Características de interés pueden ser uso del suelo (deforestación), cuerpos de agua (son solo opciones)
 
 ### 4. Compartir en este documento el link con el código que realizó.
 (no sé si hay que compartir el código directamente o el link, porque no sé si con el link la profe tenga acceso)
