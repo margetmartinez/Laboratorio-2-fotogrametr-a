@@ -1,0 +1,30 @@
+# **Laboratorio 2.  Marget Martínez y Daniela Amador**
+
+## Análisis de resultados
+
+//Cargar imagen de landsat8
+var imagen = ee.Image((landsat8)
+//Filtrar para obtener imágenes de la región de interés
+.filterBounds(cuenca)
+//Filtrar para obtener el periodo de análisis de interés
+.filterDate("2018-04-01" , "2018-04-04")
+//Seleccionar solo las bandas del espectro óptico
+.select(["B[1-7]"])
+//Organizar las escenas de menor a mayor nubosidad, ascendente
+.sort("CLOUD_COVER")
+//Despliegue la primer imagen con menor nubosidad, primer imagen
+.first());
+
+//Agregar variables para visualizarlas en el mapa
+var recortado = imagen.clip(cuenca);
+Map.addLayer(cuenca,{color:"2bbc69"},"Damas");
+Map.addLayer(recortado, {}, "L8 Image");
+
+//Combinaciones de bandas
+
+Map.addLayer(recortado, {min: 0, max: 0.4, bands: ["B6", "B5", "B2"]}, "Zonas agrícolas");
+Map.addLayer(recortado, {min: 0, max: 0.3, bands: ["B5", "B4", "B3"]}, "Infrarrojo");
+Map.addLayer(recortado, {min: 0, max: 0.3, bands: ["B7", "B6", "B4"]}, "Falso color urbano");
+Map.addLayer(recortado, {min: 0, max: 0.3, bands: ["B5", "B6", "B4"]}, "Agua");
+Map.addLayer(recortado, {min: 0, max: 0.3, bands: ["B7", "B6", "B5"]}, "Penetración atmosférica");
+
