@@ -1,6 +1,6 @@
 # **Laboratorio 2.  Marget Martínez y Daniela Amador**
 
-## Análisis de resultados
+## Código empleado
 
 //Cargar imagen de landsat8
 var imagen = ee.Image((landsat8)
